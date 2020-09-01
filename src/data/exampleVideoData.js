@@ -163,4 +163,6 @@ var exampleVideoData = [{
   }
 }];
 
+console.log('exampleVideoData.js');
+
 export default exampleVideoData;

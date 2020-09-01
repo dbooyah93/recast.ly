@@ -1,3 +1,22 @@
+// console.log(exampleVideoData);
+// class VideoListEntry extends React.Component {
+//   render(exampleVideoData) {
+//     return (
+//       <div className="App">
+//         <h1>{exampleVideoData[0].snippet.title}</h1>
+//         <h1>{exampleVideoData[1].snippet.title}</h1>
+//         <h1>{exampleVideoData[2].snippet.title}</h1>
+//       </div>
+//     );
+//   }
+// }
+
+
+
+
+
+
+
 var VideoListEntry = () => (
   <div className="video-list-entry media">
     <div className="media-left media-middle">

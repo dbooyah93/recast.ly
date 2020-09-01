@@ -1,3 +1,15 @@
+//import VideoList from './VideoList.jsx';
+
+// class App extends React.Component {
+//   render() {
+//     return (
+//       <div><VideoList /></div>
+//     );
+//   }
+// }
+
+
+
 var App = () => (
   <div>
     <nav className="navbar">
@@ -15,6 +27,7 @@ var App = () => (
     </div>
   </div>
 );
+console.log('App.js');
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
