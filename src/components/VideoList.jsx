@@ -1,31 +1,20 @@
-import exampleVideoData from '../data/exampleVideoData.js';
+import VideoListEntry from './VideoListEntry.js';
 
-
-class VideoList extends React.Component {
-  render() {
-
-    return (
-      <div className="vide-list"><h5>{exampleVideoData[0].snippets.title}</h5></div>
-    );
-  }
-}
-
-// var VideoList = () => (
-//   <div className="video-list-entry media">
-//     <div className="media-left media-middle">
-//       <img className="media-object" src="https://i.ytimg.com/vi/1w8Z0UOXVaY/default.jpg" alt="" />
-//     </div>
-//     <div className="media-body">
-//       <div className="video-list-entry-title">{exampleVideoData[0].snippets.title}</div>
-//       <div className="video-list-entry-detail">Video Description</div>
-//     </div>
-//   </div>
-// );
+var VideoList = ({videos, clickable}) => {
+  // console.log(clickable);
+  return (
+    videos.map( ele => {
+      return (
+        <VideoListEntry key={ele.id.videoId} video={ele} title={ele.snippet.title} videoDesc={ele.snippet.description} clicky={clickable}/>
+      );
+    })
+  );
+};
 
 
 
 
-console.log('VideoList.jsx');
+
 // PropTypes tell other developers what `props` a component expects
 // Warnings will be shown in the console when the defined rules are violated
 VideoList.propTypes = {
